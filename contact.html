@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tugas Akhir CSS - NIOMIC</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-xl">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <a class="navbar-brand" href="#"><img src="img/GMS-pendek-white.png" class="logohead"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cg.html">Connect Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-9" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+        <!-- <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/2100.avif" width="100%" height="550px" class="d-block w-100" alt="...">
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="slideshow now">
+            <div class="slider">
+                <input type="radio" name="radio" id="radio1" checked>
+                <input type="radio" name="radio" id="radio2">
+                <input type="radio" name="radio" id="radio3">
+                <input type="radio" name="radio" id="radio4">
+                <input type="radio" name="radio" id="radio5">
+                <div class="slide sh1">
+                    <img src="img/2100.avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/2100 (1).avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/2100 (2).avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/2100 (3).avif" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/2100 (4).avif" alt="">
+                </div>
+            </div>
+
+            <div class="nav">
+                <label for="radio1" class="bar"></label>
+                <label for="radio2" class="bar"></label>
+                <label for="radio3" class="bar"></label>
+                <label for="radio4" class="bar"></label>
+                <label for="radio5" class="bar"></label>
+            </div>
+        </div>
+
+        <section class="section-warp">
+
+            <div class="pt-4 pb-5">
+                <div class="container">
+                    <div class="mb-3">
+                        <h3 id="contactus" class="text-center">Hubungi Kami</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <form id="w0">
+                                <input type="hidden" name="_csrf"
+                                    value="vWXWdhGy0A4iGOQ3elcleUhO2UaIb4mj-H66BrT7Cc__MYcceO3lbGRoqgIuNGdLPheBEtIevOKsCvhw5cg-uA==">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group field-contactform-name required">
+
+                                            <input type="text" id="contactform-name" class="form-control"
+                                                name="ContactForm[name]" placeholder="Name" aria-required="true">
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group field-contactform-email required">
+
+                                            <input type="text" id="contactform-email" class="form-control"
+                                                name="ContactForm[email]" placeholder="E-mail" aria-required="true">
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group field-contactform-subject required">
+
+                                            <input type="text" id="contactform-subject" class="form-control"
+                                                name="ContactForm[subject]" placeholder="Subject" aria-required="true">
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group field-contactform-body required">
+
+                                            <textarea id="contactform-body" class="form-control"
+                                                name="ContactForm[body]" rows="10" placeholder="Message"
+                                                aria-required="true"></textarea>
+
+                                            <p class="help-block help-block-error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-danger">SEND</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="d-md-none mt-5"></div>
+                            <h5 class="mb-3">Kantor</h5>
+                            <p>
+                                <strong>Alamat</strong>
+                                <br>
+                                <a href="#map">Vision Building Lt. 7, Marvell City Complex, Jl. Raya Ngagel 123,
+                                    Surabaya.</a>
+                                <br><br>
+
+                                <strong>Jam Kantor</strong>
+                                <br>
+                                Open hours: 8.30-16.30 Tue-Sat <br><br>
+                                <strong>E-mail</strong>
+                                <br>
+                                <a href="#email">info@gms.church</a>
+                                <br><br>
+                                <a class="btn btn-danger" href="#map">See GMS Church Locations</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="map"></div>
+            </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63321.82219437515!2d112.69950410555293!3d-7.284696393150386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb922ffe3bf%3A0x880e6e336767c40!2sGereja%20Mawar%20Sharon%20Surabaya%20Timur!5e0!3m2!1sid!2sid!4v1646934431672!5m2!1sid!2sid"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <footer style="background-color: #e8ecef;">
+            <div class="container d-md-flex py-4">
+                <div class="mr-md-auto text-center text-md-left">
+                    <div class="copyright">
+                        &copy; Copyright 2022 <strong><span>GMS Church</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits">
+                        Designed by <a href="https://www.linkedin.com/in/yehezkiel-reynaldi-6a5866194/">Yehezkiel
+                            Reynaldi
+                            Abraham</a>
+                    </div>
+        </footer>
+
+
+    </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
